@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Scheduler</title>
+	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<script src="assets/js/app.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/solar/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="icon" type="image/ico" href="assets/images/train.ico">
+</head>
+<body>
+	<div class=container>
+		<div class="game-name jumbotron">
+			<h1>Train Scheduler</h1>
+			<h3 id=time_now></h3>
+		</div>
+		<div class="container-fluid">
+			<div class="col-md-3 col">
+				<div class=box>
+					<div>Train Name:</div>
+					<input id=train-name type="text" name="name" placeholder="Choo-Choo">
+					<div>Destination:</div>
+					<input id=destination type="text" name="destination" placeholder="New York">
+					<div>First Train Time (in military time):</div>
+					<input id=first type="number" name="first-train-time" placeholder="HHMM" min="0001" max="2400">
+					<div>Frequency:</div>
+					<input id=frequency type="number" name="frequency" placeholder="7 (min)" min="1" max="120">
+					<button id=add_train_button class="btn start btn-default" type="button">Add train</button>
+				</div>
+			</div>
+			<div class="col-md-9 col">
+				<div class=box>
+					<table id=table>
+						<tr>
+							<th> Train Name </th>
+							<th> Destination </th>
+							<th> First Train Time </th>
+							<th> Frequency </th>
+							<th> Minutes Away </th>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+.box{
+	margin-top: 15px;
+	padding: 10px;
+}
+input{
+	width: 90%;
+	margin: auto;
+}
+.game-name,
+#time_now{
+	text-align: center;
+}
+.container-fluid,
+.col{
+	padding: 0;
+}
+#table{
+	width: 100%;
+	padding-left: 15px;
+}
+#add_train_button{
+	margin-top: 10px;
+}
+th{
+	border-bottom: 1px #073642 solid;
+}
