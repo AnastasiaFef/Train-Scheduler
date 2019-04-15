@@ -104,8 +104,8 @@ $(document).ready(function(){
 		if(!frequency_input){
 			frequency=data.val().frequency;
 		}
-		var diffTime = moment().diff(moment(first, "hh:mm A"), 'minutes')*(-1);
-		away = diffTime % frequency;
+		var diffTime = moment().diff(moment(first, "hh:mm A"), 'minutes');
+		away = frequency - (diffTime % frequency);
 		// var currentTime = moment().format("HH:mm");
 		// console.log("currentTime "+currentTime)
 		// var away_formatted=moment(away, "minutes").format("HH:mm")
